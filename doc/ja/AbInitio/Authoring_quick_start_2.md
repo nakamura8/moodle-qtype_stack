@@ -1,6 +1,6 @@
 # 問題作成クイック・スタート・ガイド2：問題変数
 
-[1 - 基本的な問題](Authoring_quick_start_1.md) | 2 - 問題変数 | [3 - フィードバックを改善する](Authoring_quick_start_3.md) | [4 - ランダム化](Authoring_quick_start_4.md) | [5 - 問題のテスト](Authoring_quick_start_5.md) | [6 - 複数解答問題](Authoring_quick_start_6.md) | [7 - 数式簡略の無効化](Authoring_quick_start_7.md) | [8 - 問題のインポートと小テスト](Authoring_quick_start_8.md)
+[1 - 動作する最小限の問題](Authoring_quick_start_1.md) | 2 - 問題変数 | [3 - フィードバックを改善する](Authoring_quick_start_3.md) | [4 - ランダム化](Authoring_quick_start_4.md) | [5 - 問題のテスト](Authoring_quick_start_5.md) | [6 - STACK問題ライブラリ](Authoring_quick_start_6.md) | [7 - 複数解答欄問題](Authoring_quick_start_7.md) | [8 - 数式簡略の無効化](Authoring_quick_start_8.md) | [9 - 小テストの設定](Authoring_quick_start_9.md)
 
 
 問題作成クイック・スタート・ガイドのこの部分では問題変数の使用について扱います。次のビデオでそのプロセスを説明していますので,ご覧ください。：
@@ -23,8 +23,8 @@
 問題変数に以下を追加してください
 
 ```
-exp: 3*(x-1)^(-4)；
-ta: int(exp,x)+c；
+exp: 3*(x-1)^(-4);
+ta: int(exp,x)+c;
 ```
 
 問題変数のコーディングはMaximaの文法に基づいています。特に,コロン `:` は変数に値を代入するために使われます。つまり,`a1` に `5` という値を代入するには,`a1:5` という構文を使います。一般的に,1文字の変数名は生徒が入力するためのものであるため,複数文字の変数名をつけるとよいです。なぜなら,デフォルトでは複数文字の変数は生徒が入力できないからです。さらに,各行の最後にセミコロンを追加することは任意ですが,つけておくことをお勧めします。

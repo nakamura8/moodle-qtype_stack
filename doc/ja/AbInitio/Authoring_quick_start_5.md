@@ -1,6 +1,6 @@
 # 問題作成クイック・スタート・ガイド5：問題のテスト
 
-[1 - 基本的な問題](Authoring_quick_start_1.md) | [2 - 問題変数](Authoring_quick_start_2.md) | [3 - フィードバックを改善する](Authoring_quick_start_3.md) |　[4 - ランダム化](Authoring_quick_start_4.md) | 5 - 問題のテスト | [6 - 複数解答問題](Authoring_quick_start_6.md) | [7 - 数式簡略の無効化](Authoring_quick_start_7.md) | [8 - 問題のインポートと小テスト](Authoring_quick_start_8.md)
+[1 - 動作する最小限の問題](Authoring_quick_start_1.md) | [2 - 問題変数](Authoring_quick_start_2.md) | [3 - フィードバックを改善する](Authoring_quick_start_3.md) | [4 - ランダム化](Authoring_quick_start_4.md) | 5 - 問題のテスト | [6 - STACK問題ライブラリ](Authoring_quick_start_6.md) | [7 - 複数解答欄問題](Authoring_quick_start_7.md) | [8 - 数式簡略の無効化](Authoring_quick_start_8.md) | [9 - 小テストの設定](Authoring_quick_start_9.md)
 
 
 問題作成クイック・スタート・ガイドのこの部分では問題のテストについて扱います。次のビデオでそのプロセスを説明していますので,ご覧ください：
@@ -12,11 +12,11 @@
 ここ数回で,私たちはシンプルな積分の問題を扱いました。クイックスタートを続ける前に,問題変数が次のように設定されていることを確認してください：
 
 ```
-a1 : 1+rand(6)；
-a2 : 1+rand(6)；
-nn : 2+rand(4)；
-exp : a1*(x-a2)^(-nn)；
-ta: int(exp, x)+c；
+a1 : 1+rand(6);
+a2 : 1+rand(6);
+nn : 2+rand(4);
+exp : a1*(x-a2)^(-nn);
+ta: int(exp, x)+c;
 ```
 
 問題のテストは時間がかかり面倒ですが,問題が確実に動作するためには重要です。このプロセスを支援するために,STACKでは教師が「問題テスト」を定義することができます。原理はソフトウェア工学における「ユニットテスト」と同じです。
@@ -87,4 +87,4 @@ STACKでは,`sin`,`cos`などの標準的な数学関数を使うことができ
 
 これでSTACKで質問テストを使用できるようになります。
 
-#### 問題作成クイック・スタート・ガイドの次のパートでは,[複数解答問題](Authoring_quick_start_6.md)について説明します。
+#### 問題作成クイック・スタート・ガイドの次のパートでは,[STACK問題ライブラリ](Authoring_quick_start_6.md)について説明します。
